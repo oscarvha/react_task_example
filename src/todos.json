@@ -1,0 +1,42 @@
+{
+  "todos": [
+    {
+        "title" : "Tarea 1",
+        "responsible": "Oscar",
+        "description": "Bootstrap React",
+        "priority": "low"
+    },
+    {
+        "title" : "Tarea 2",
+        "responsible": "Sara",
+        "description": "Test",
+        "priority": "high"
+    },
+    {
+        "title" : "Tarea 3",
+        "responsible": "Oscar",
+        "description": "Test React",
+        "priority": "medium"
+    },
+    {
+        "title" : "Tarea 4",
+        "responsible": "Oscar",
+        "description": "Prueba de Tarea",
+        "priority": "medium"
+    },
+    {
+        "title" : "Tarea 4",
+        "responsible": "Oscar",
+        "description": "Prueba de Tarea",
+        "priority": "medium"
+    },
+    {
+        "title" : "Tarea 4",
+        "responsible": "Oscar",
+        "description": "Prueba de Tarea",
+        "priority": "medium"
+    }
+
+  ]
+
+}
