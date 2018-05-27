@@ -4,6 +4,7 @@ import './App.css';
 
 import Navigation from './components/Navigation.js'
 import Task from './components/Task.js'
+import TodoForm from './components/TodoForm.js'
 import { todos } from './todos.json';
 
 
@@ -14,12 +15,35 @@ constructor(){
   this.state = {
     todos:todos
   }
+
+  this.handleAddTodo = this.handleAddTodo.bind(this);
+  this.removeTodo = this.removeTodo.bind(this);
+}
+
+
+handleAddTodo(todo){
+  this.setState({
+    todos:[...this.state.todos, todo]
+  });
+
+}
+
+removeTodo(index){
+  this.setState({
+    todos:this.state.todos.filter((e,i)=>{
+      return i !== index;
+    })
+  })
 }
 
   render() {
 
   const todos = this.state.todos.map((todo ,i ) =>{
-        return  <Task todo={todo} i={i} />
+        return (
+          <div className ="col-md-4" key={i}>
+                 <Task todo={todo} index={i} removeTodo={this.removeTodo} />
+          </div>
+        )
   })
 
     return (
@@ -28,6 +52,9 @@ constructor(){
         <div className="container">
           <div className = "row">
          {todos}
+         </div>
+         <div className="container mt-5">
+                  <TodoForm onAddTodo = {this.handleAddTodo} />
          </div>
 
         </div>

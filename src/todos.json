@@ -20,20 +20,20 @@
     },
     {
         "title" : "Tarea 4",
-        "responsible": "Oscar",
-        "description": "Prueba de Tarea",
+        "responsible": "Raul",
+        "description": "Añadir elementos",
         "priority": "medium"
     },
     {
-        "title" : "Tarea 4",
-        "responsible": "Oscar",
-        "description": "Prueba de Tarea",
+        "title" : "Tarea 5",
+        "responsible": "Mariana",
+        "description": "Repasar CSS",
         "priority": "medium"
     },
     {
-        "title" : "Tarea 4",
-        "responsible": "Oscar",
-        "description": "Prueba de Tarea",
+        "title" : "Tarea 6",
+        "responsible": "Manolo",
+        "description": "Pruebas",
         "priority": "medium"
     }
 
