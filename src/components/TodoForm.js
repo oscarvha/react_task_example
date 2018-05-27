@@ -32,36 +32,36 @@ constructor(){
 render(){
 
   return(
-    <div className='card'>
-      <form className='card-body' onSubmit={this.handleSubmit}>
-        <div className='form-group'>
+    <div className="card">
+      <form className="card-body" onSubmit={this.handleSubmit}>
+        <div className="form-group">
           <input
-            type='text'
-            name='title'
-            className='form-control'
+            type="text"
+            name="title"
+            className="form-control"
             onChange={this.handleInput}
-            placeholder='Title' />
+            placeholder="Title" />
         </div>
-        <div className='form-group'>
+        <div className="form-group">
           <input
-            type='text'
-            name='responsible'
-            className='form-control'
+            type="text"
+            name="responsible"
+            className="form-control"
             onChange={this.handleInput}
-            placeholder='Responsable'  />
+            placeholder="Responsable"  />
         </div>
-        <div className='form-group'>
+        <div className="form-group">
           <input
-            type='text'
-            name='description'
-            className='form-control'
+            type="text"
+            name="description"
+            className="form-control"
             onChange={this.handleInput}
-            placeholder='description' />
+            placeholder="description" />
         </div>
-        <div className='form-group'>
+        <div className="form-group">
           <select
-            name='priority'
-            className='form-control'
+            name="priority"
+            className="form-control"
               onChange={this.handleInput}
            >
            <option> Low </option>
