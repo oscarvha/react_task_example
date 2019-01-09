@@ -19,13 +19,10 @@ constructor(){
   handleInput(e){
     const { value , name } = e.target;
     this.setState({[name]: value})
-    console.log(this.state);
   }
 
   handleSubmit(e){
     e.preventDefault();
-    console.log(this.state);
-    console.log('enviando datos...');
     this.props.onAddTodo(this.state);
   }
 

@@ -13,11 +13,15 @@ class App extends Component {
 constructor(){
   super();
   this.state = {
-    todos:todos
+    todos: []
   }
 
   this.handleAddTodo = this.handleAddTodo.bind(this);
   this.removeTodo = this.removeTodo.bind(this);
+}
+
+componentDidMount(){
+  this.setState({todos:todos});
 }
 
 
